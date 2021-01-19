@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 
+//https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
